@@ -3,7 +3,7 @@ configurations = {
         BrolyPad = 6,
         settings = {
             senzuspam = false,
-            transform = false,
+            transform = true,
             movespam = true,
             KiBroly = true,
             timeLimits = {
@@ -27,7 +27,7 @@ configurations = {
             movespam = true,
             KiBroly = true,
             timeLimits = {
-                queue = 16.5,
+                queue = 30.5,
                 broly = 995,
                 earth = 3.5,
             }
@@ -126,7 +126,7 @@ Service = game:GetService("RunService").Stepped:Connect(function()
 end)
 
 plr.CharacterAdded:Connect(function()
-    wait(1)
+    wait()
     hud = plr.PlayerGui:WaitForChild("HUD")
     setupStats()
     setupSP()
@@ -162,7 +162,7 @@ coroutine.resume(
 
 makeTextPurple(hud)
 
-if configurations["Comical983"].settings.transform then
+if configurations["fudidin_z"].settings.transform then
     coroutine.wrap(function()
         while wait(8) do
             local char = plr.Character
