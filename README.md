@@ -164,7 +164,7 @@ makeTextPurple(hud)
 
 if configurations["Comical983"].settings.transform then
     coroutine.wrap(function()
-        while wait() do
+        while wait(8) do
             local char = plr.Character
             if char and char:FindFirstChild("Humanoid") then
                 pcall(function()
