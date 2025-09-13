@@ -162,7 +162,7 @@ coroutine.resume(
 
 makeTextPurple(hud)
 
-if configurations["fudidin_z"].settings.transform then
+if configurations["Comical983"].settings.transform then
     coroutine.wrap(function()
         while wait() do
             local char = plr.Character
